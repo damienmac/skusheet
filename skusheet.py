@@ -3,6 +3,7 @@
 ##
 ##
 ##
+filename = 'mindspark.csv'
 
 ### Sample CSV ###
 # Status,Seq,URL,SKU,Product Code,IsBundle,User-pc count,SKU Type,Page to Land,Site Code,Site Language,Sku Language,Country Code,Language Code,Currency Code,Price,,,org,Channel,Promotion (Flex),Segment,Keyword Category,Email Program,Affiliate Sub Channel,Period (Time),Is Upgrade,PL Code,tppc,Batch Name,sku lang priority,Valid From,Valid To,Phased Out,Source,Vendor
@@ -37,51 +38,54 @@ def close_csv_reader(csvfile):
 	csvfile.close()
 
 country_mapping = {
-	'AE' : u'',
+	'AE' : u'', # u'Select Country', # this is broken, should be Arab Emirates
 	'AT' : u'Österreich', # Austria
 	'AU' : u'Australia',
 	'BE' : u'België', # Belgium
 	'CA' : u'Canada',
 	'CH' : u'Suisse', # Switzerland
-	'CL' : u'',
-	'CO' : u'',
+	'CL' : u'Chile',
+	'CO' : u'Colombia',
 	'DE' : u'Deutschland', # Germany
 	'FR' : u'France',
 	'GB' : u'United Kingdom',
-	'IE' : u'',
-	'IL' : u'',
-	'LU' : u'Sélectionnez un pays', # this looks wrong. Report to estore? do we care?
-	'MX' : u'',
+	'IE' : u'Ireland',
+	'IL' : u'Israel',
+	'LU' : u'', #u'Sélectionnez un pays', # this looks wrong. Report to estore? do we care?
+	'MX' : u'México',
 	'NL' : u'Nederland',
 	'NZ' : u'New Zealand',
-	'PE' : u'',
-	'PR' : u'',
+	'PE' : u'Perú',
+	'PR' : u'', # Seleccione un país # this looks wrong, there is NO 'PR' country code!
 	'SE' : u'Sverige', # Sweden
 	'US' : u'United States',
-	'VE' : u'',
-	'ZA' : u'',
+	'VE' : u'Venezuela',
+	'ZA' : u'South Africa',
 	'BR' : u'Brasil',
 	'DK' : u'Danmark', # Denmark
 	'ES' : u'España',
-	'FI' : u'',
+	'FI' : u'Suomi', # Finland (looks broken)
 	'IT' : u'Italia',
-	'PL' : u'',
-	'RU' : u'',
-	'TR' : u'',
+	'PL' : u'Polska', # Poland
+	'RU' : u'Россия', # Russia
+	'TR' : u'Türkiye', # Turkey
 	'GR' : u'Greece',
-	'TH' : u'',
+	'TH' : u'Thailand',
 	'SG' : u'Singapore',
 	'PT' : u'Portugal',
 	'NO' : u'Norge', # Norway
-	'AR' : u'',
-	'ID' : u'',
-	'KH' : u'',
-	'PH' : u'',
+	'AR' : u'Argentina',
+	'ID' : u'Indonesia',
+	'KH' : u'Cambodia',
+	'PH' : u'Philippines',
 }
 
 def validate_country(csv_country, page_country):
-	if page_country == country_mapping[csv_country.upper()].encode('utf-8'):
-		return True
+	try:
+		if page_country == country_mapping[csv_country.upper()].encode('utf-8'):
+			return True
+	except KeyError:
+		return False # something not in our table, FAIL instead of crashing and examine it later
 	return False
 
 csv_product_mapping = {
@@ -138,10 +142,13 @@ page_product_mapping = {
 }
 
 def validate_product(csv_product, page_product, country):
-	if csv_product_mapping[csv_product] \
-		and page_product_mapping[page_product] \
-		and csv_product_mapping[csv_product] == page_product_mapping[page_product]:
-		return True
+	try:
+		if csv_product_mapping[csv_product] \
+			and page_product_mapping[page_product] \
+			and csv_product_mapping[csv_product] == page_product_mapping[page_product]:
+			return True
+	except KeyError:
+		return False # something not in our table, FAIL instead of crashing and examine it later
 	return False
 
 def validate_sku(sku, page_sku_href):
@@ -257,7 +264,7 @@ def play2():
 	start_time = datetime.now()
 	print 'STARTED AT: %s' % start_time
 
-	csvfile,csvreader = get_csv_reader()
+	csvfile,csvreader = get_csv_reader(filename)
 	for row in csvreader:
 		if not row: break
 		count += 1

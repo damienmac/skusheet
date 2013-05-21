@@ -12,7 +12,7 @@
 
 from selenium import webdriver
 import csv
-import date
+from datetime import datetime
 
 record = {
 	# 'url':'http://buy.norton.com/partneroffer?ctry=US&lang=EN&selSKU=21242854&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart',
@@ -37,39 +37,154 @@ def close_csv_reader(csvfile):
 	csvfile.close()
 
 country_mapping = {
-	'US' : u'United States',
-	'CA' : u'Canada',
-	'BE' : u'België',
-	'NL' : u'Nederland',
-	'FR' : u'France',
-	'LU' : u'Sélectionnez un pays', # this looks wrong. Report to estore? do we care?
-	'IT' : u'Italia',
-	'ES' : u'España',
-	'AT' : u'Österreich',
-	'DE' : u'Deutschland',
-	'BR' : u'Brasil',
-	'GB' : u'United Kingdom',
+	'AE' : u'',
+	'AT' : u'Österreich', # Austria
 	'AU' : u'Australia',
+	'BE' : u'België', # Belgium
+	'CA' : u'Canada',
+	'CH' : u'Suisse', # Switzerland
+	'CL' : u'',
+	'CO' : u'',
+	'DE' : u'Deutschland', # Germany
+	'FR' : u'France',
+	'GB' : u'United Kingdom',
+	'IE' : u'',
+	'IL' : u'',
+	'LU' : u'Sélectionnez un pays', # this looks wrong. Report to estore? do we care?
+	'MX' : u'',
+	'NL' : u'Nederland',
+	'NZ' : u'New Zealand',
+	'PE' : u'',
+	'PR' : u'',
+	'SE' : u'Sverige', # Sweden
+	'US' : u'United States',
+	'VE' : u'',
+	'ZA' : u'',
+	'BR' : u'Brasil',
+	'DK' : u'Danmark', # Denmark
+	'ES' : u'España',
+	'FI' : u'',
+	'IT' : u'Italia',
+	'PL' : u'',
+	'RU' : u'',
+	'TR' : u'',
+	'GR' : u'Greece',
+	'TH' : u'',
+	'SG' : u'Singapore',
+	'PT' : u'Portugal',
+	'NO' : u'Norge', # Norway
+	'AR' : u'',
+	'ID' : u'',
+	'KH' : u'',
+	'PH' : u'',
 }
+
 def validate_country(csv_country, page_country):
-	if page_country == country_mapping[csv_country]:
+	if page_country == country_mapping[csv_country.upper()].encode('utf-8'):
 		return True
 	return False
 
-def do_work(row):
+csv_product_mapping = {
+	'EIS_Vx_0MO_PC'	         : 'Expert Install',
+	'N360_2013_12MO_PC'      : 'N360',
+	'NAV_2013_12MO_PC'       : 'NAV',
+	'NAV_2013_24MO_PC'       : 'NAV',
+	'NIS_2013_12MO_PC'       : 'NIS',
+	'NOBU-25GB_V2.0_12MO_CC' : 'NOBU',
+	'NU_V14.0_0MO_PC'        : 'Norton Utilities',
+	'PCJ_Vx_0MO_PC'          : 'PC Jumpstart',
+	'PCP_Vx_0MO_PC'          : 'PC Powerboost',
+	'PCT_Vx_0MO_PC'          : 'PC Tune-Up',
+	'SVR_Vx_0MO_PC'          : 'Spyware and Virus Removal',
+}
+
+page_product_mapping = {
+	'Instalação especializada'    : 'Expert Install', # Portuguese
+	'Norton 360™'                 : 'N360',
+	'Norton AntiVirus™'           : 'NAV', # nice inconsistency!
+	'Norton™ AntiVirus'           : 'NAV', # nice! inconsistency
+	'Norton™ Internet Security'   : 'NIS',
+
+	'Norton™ Online Backup 25GB'    : 'NOBU', # nice inconsistency!
+	'Norton™ Online Backup 25 GB'   : 'NOBU', # nice inconsistency !
+	'Norton™ Online Backup (25 GB)' : 'NOBU', # nice inconsistency (!)
+	'Norton™ Online Backup 25 Go'   : 'NOBU', # French? Bug?
+
+	''                    : 'Norton Utilities', # all these pages are broken?
+
+	'PC Jump Start'                        : 'PC Jumpstart',
+	'Service Installation et Optimisation' : 'PC Jumpstart', # French
+	'PC-Starthilfe'                        : 'PC Jumpstart', # German
+	'Pc-opstarthulp'                       : 'PC Jumpstart', # Dutch
+
+	'PC Power Boost'      : 'PC Powerboost',
+
+	'PC Tune-Up'          : 'PC Tune-Up',
+	'Pc-afstelling'       : 'PC Tune-Up', # Dutch
+	'PC-Optimierung'      : 'PC Tune-Up', # German
+	'Optimisation du PC'  : 'PC Tune-Up', # French
+	'Datoroptimering'     : 'PC Tune-Up', # Swedish
+	'Optimização do PC'   : 'PC Tune-Up', # Portuguese
+
+	'NortonLive™ Spyware and Virus Removal '                  : 'Spyware and Virus Removal',
+	'Rimozione di spyware e virus NortonLive™'                : 'Spyware and Virus Removal', # Italian
+	'Eliminación de virus y spyware de NortonLive™'           : 'Spyware and Virus Removal', # Spanish
+	'NortonLive™ Remoção de Vírus e Spyware'                  : 'Spyware and Virus Removal', # Portuguese
+	'Service NortonLive™ de suppression de spywares et virus' : 'Spyware and Virus Removal', # French
+	'NortonLive™ Spyware- und Virenentfernung'                : 'Spyware and Virus Removal', # German
+	'Spyware- en virusverwijdering van NortonLive™'           : 'Spyware and Virus Removal', # Dutch
+	'NortonLive™ spyware- og virusfjernelse'                  : 'Spyware and Virus Removal', # Danish
+	'NortonLive™ spionprogram- og virusfjerning'              : 'Spyware and Virus Removal', # Norsk?
+}
+
+def validate_product(csv_product, page_product, country):
+	if csv_product_mapping[csv_product] \
+		and page_product_mapping[page_product] \
+		and csv_product_mapping[csv_product] == page_product_mapping[page_product]:
+		return True
+	return False
+
+def validate_sku(sku, page_sku_href):
+	return sku in page_sku_href
+
+def validate_price(price, page_price, country):
+	comma_price = price.replace('.', ',')
+	return price in page_price or comma_price in page_price
+
+def do_work(row, passed, failed):
+
+	###
+	### early exit?
+	###
+	if not row[0] == 'Live':
+		return
 
 	###
 	### scrape the csv row
 	###
 	url      = row[2]
 	sku      = row[3]
-	prodcode = row[4]
+	product  = row[4]
 	country  = row[12]
 	language = row[13]
 	currency = row[14]
 	price    = row[15]
 	tppc     = row[28]
-	print sku, prodcode, country, language, currency, price, tppc
+	partner  = row[35]
+	print "\n", partner, sku, product, country, language, currency, price, tppc
+	print url
+
+	###
+	### Make sure the URL we are about to fetch has the params that match other fields in the spreadsheet
+	###
+	### http://buy.norton.com/partneroffer?ctry=NL&lang=NL&selSKU=21242865&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart
+	### 1) starts with "http://buy.norton.com/partneroffer?"
+	### 2) country
+	### 3) language
+	### 4) sku
+	### 5) tppc
+
+	# TODO: DM do this
 
 	###
 	### get the page and scrape the data
@@ -79,19 +194,22 @@ def do_work(row):
 	driver.implicitly_wait(7)
 
 	page_url = driver.current_url
-	print(page_url)
+	#print page_url
 
 	page_country = driver.find_element_by_class_name('localizationCtryWithOutImage').text
-	print(page_country.encode('utf-8'))
+	page_country = page_country.encode('utf-8')
+	print 'Page Country: "%s"' % page_country
 
 	page_product = driver.find_element_by_css_selector("span.spanProdTitle > a > span").text
-	print(page_product.encode('utf-8'))
+	page_product = page_product.encode('utf-8')
+	print 'Page Product: "%s"' % page_product
 
 	page_sku_href = driver.find_element_by_css_selector("span.spanProdTitle > a").get_attribute("href")
-	print(page_sku_href)
+	#print page_sku_href
 
 	page_price = driver.find_element_by_class_name('price').text
-	print(page_price.encode('utf-8'))
+	page_price = page_price.encode('utf-8')
+	#print page_price
 
 	# TODO: DM: take a screenshot
 
@@ -100,22 +218,57 @@ def do_work(row):
 	###
 	### compare everything for validity, massaging as necessary
 	###
-	if (validate_country(country, page_country)):
-		print "PASS: COUNTRY: %s, %s" % (country, page_country.encode('utf-8'))
+	if validate_country(country, page_country):
+		passed += 1
+		print "PASS: COUNTRY: %s, %s" % (country, page_country)
 	else:
-		print "FAIL: COUNTRY: %s, %s" % (country, page_country.encode('utf-8'))
+		failed += 1
+		print "FAIL: COUNTRY: %s, %s" % (country, page_country)
+
+	if validate_product(product, page_product, country):
+		passed += 1
+		print "PASS: PRODUCT: %s, %s" % (product, page_product)
+	else:
+		failed += 1
+		print "FAIL: PRODUCT: %s, %s" % (product, page_product)
+
+	if validate_sku(sku, page_sku_href):
+		passed += 1
+		print "PASS: SKU: %s" % sku
+	else:
+		failed += 1
+		print "FAIL: SKU: %s not in %s" % (sku, page_sku_href)
+
+	if validate_price(price, page_price, country):
+		passed += 1
+		print "PASS: PRICE: %s, %s" % (price, page_price)
+	else:
+		failed += 1
+		print "FAIL: PRICE: %s, %s" % (price, page_price)
+
+	return passed,failed
 
 
 def play2():
 	count = 0
-	print 'STARTED AT:', date.datetime.now()
+	passed = 0
+	failed = 0
+
+	start_time = datetime.now()
+	print 'STARTED AT: %s' % start_time
+
 	csvfile,csvreader = get_csv_reader()
 	for row in csvreader:
+		if not row: break
 		count += 1
 		#print row
-		do_work(row)
-	print 'processed %d records' % count
+		passed,failed = do_work(row, passed, failed)
 	close_csv_reader(csvfile)
+
+	print '\nprocessed %d records (%d tests passed; %d tests failed)' % (count, passed, failed)
+	end_time = datetime.now()
+	print 'ENDED AT: %s' % end_time
+	print 'DURATION: %s' % (end_time - start_time)
 
 def play():
 	driver = webdriver.Firefox()

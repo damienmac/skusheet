@@ -12,19 +12,9 @@ filename = 'mindspark.csv'
 ###
 
 from selenium import webdriver
-import csv
 from datetime import datetime
-
-record = {
-	# 'url':'http://buy.norton.com/partneroffer?ctry=US&lang=EN&selSKU=21242854&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart',
-	'url':'http://buy.norton.com/partneroffer?ctry=IT&lang=IT&selSKU=21242915&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart',
-	'sku':'21242854',
-	'language':'en',
-	'counry': 'US',
-	'currency':'USD',
-	'price':'41.99',
-	'vendor':'_PC DRIVERS HQ',
-}
+import csv
+import os
 
 def get_csv_reader(file_name='sample.csv'):
 		csvfile = open(file_name, 'rb')
@@ -36,6 +26,36 @@ def get_csv_reader(file_name='sample.csv'):
 
 def close_csv_reader(csvfile):
 	csvfile.close()
+
+### http://buy.norton.com/partneroffer?ctry=NL&lang=NL&selSKU=21242865&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart
+### 1) starts with "http://buy.norton.com/partneroffer?"
+### 2) country
+### 3) language
+### 4) sku
+### 5) tppc
+def validate_url(url, country, language, sku, tppc):
+	if not 'ctry=' in url:
+		return False
+	if not country.lower() in url.lower():
+		return False
+	if not 'lang=' in url:
+		return False
+	if not language.lower() in url.lower():
+		return False
+	if not 'selSKU=' in url:
+		return False
+	if not sku in url:
+		return False
+	if not 'tppc=' in url:
+		return False
+	if not tppc in url:
+		return False
+	if not 'http://buy.norton.com/partneroffer?' in url:
+		return False
+	if not 'ptype=cart' in url:
+		return False
+	return True
+
 
 country_mapping = {
 	'AE' : u'', # u'Select Country', # this is broken, should be Arab Emirates
@@ -179,7 +199,7 @@ def do_work(row, passed, failed):
 	tppc     = row[28]
 	partner  = row[35]
 	print "\n", partner, sku, product, country, language, currency, price, tppc
-	print url
+	#print url
 
 	###
 	### Make sure the URL we are about to fetch has the params that match other fields in the spreadsheet
@@ -191,7 +211,12 @@ def do_work(row, passed, failed):
 	### 4) sku
 	### 5) tppc
 
-	# TODO: DM do this
+	if validate_url(url, country, language, sku, tppc):
+		passed += 1
+		print "PASS: URL: %s" % url
+	else:
+		failed += 1
+		print "FAIL: URL: %s" % url
 
 	###
 	### get the page and scrape the data
@@ -219,6 +244,10 @@ def do_work(row, passed, failed):
 	#print page_price
 
 	# TODO: DM: take a screenshot
+	image_filename = os.getcwd() + "\\" + partner + '-' + sku + '-' + language + '-' + country + '-' + price + '.png'
+	print "Saving screenshot to ", image_filename
+	driver.get_screenshot_as_file(image_filename)
+
 
 	driver.close()
 
@@ -256,7 +285,7 @@ def do_work(row, passed, failed):
 	return passed,failed
 
 
-def play2():
+def validate_skus():
 	count = 0
 	passed = 0
 	failed = 0
@@ -277,32 +306,6 @@ def play2():
 	print 'ENDED AT: %s' % end_time
 	print 'DURATION: %s' % (end_time - start_time)
 
-def play():
-	driver = webdriver.Firefox()
-	driver.get(record['url'])
-	driver.implicitly_wait(7)
-
-	new_url = driver.current_url
-	print(new_url)
-
-	country = driver.find_element_by_class_name('localizationCtryWithOutImage').text
-	print(country.encode('utf-8'))
-
-	# product = driver.find_element_by_class_name('spanProdTitle').text
-	# print(product.encode('utf-8'))
-
-	product = driver.find_element_by_css_selector("span.spanProdTitle > a > span").text
-	print(product.encode('utf-8'))
-
-	hasSKU = '21242915' in driver.find_element_by_css_selector("span.spanProdTitle > a").get_attribute("href")
-	print(hasSKU)
-
-	price = driver.find_element_by_class_name('price').text
-	print(price.encode('utf-8'))
-
-	driver.close()
-
 
 if __name__ == '__main__':
-	#play()
-	play2()
+	validate_skus()

@@ -3,7 +3,9 @@
 ##
 ##
 ##
-filename = 'mindspark.csv'
+#filename = 'mindspark.csv'
+#filename = 'pcd.csv'
+filename = 'ask.csv'
 
 ### Sample CSV ###
 # Status,Seq,URL,SKU,Product Code,IsBundle,User-pc count,SKU Type,Page to Land,Site Code,Site Language,Sku Language,Country Code,Language Code,Currency Code,Price,,,org,Channel,Promotion (Flex),Segment,Keyword Category,Email Program,Affiliate Sub Channel,Period (Time),Is Upgrade,PL Code,tppc,Batch Name,sku lang priority,Valid From,Valid To,Phased Out,Source,Vendor
@@ -17,12 +19,12 @@ import csv
 import os
 
 def get_csv_reader(file_name='sample.csv'):
-		csvfile = open(file_name, 'rb')
-		csvreader = csv.reader(csvfile, dialect='excel')
-		# skip the header row
-		for row in csvreader:
-			#print row
-			return csvfile,csvreader
+	csvfile = open(file_name, 'rb')
+	csvreader = csv.reader(csvfile, dialect='excel')
+	# skip the header row
+	for row in csvreader:
+		#print row
+		return csvfile,csvreader
 
 def close_csv_reader(csvfile):
 	csvfile.close()
@@ -230,11 +232,11 @@ def do_work(row, passed, failed):
 
 	page_country = driver.find_element_by_class_name('localizationCtryWithOutImage').text
 	page_country = page_country.encode('utf-8')
-	print 'Page Country: "%s"' % page_country
+	#print 'Page Country: "%s"' % page_country
 
 	page_product = driver.find_element_by_css_selector("span.spanProdTitle > a > span").text
 	page_product = page_product.encode('utf-8')
-	print 'Page Product: "%s"' % page_product
+	#print 'Page Product: "%s"' % page_product
 
 	page_sku_href = driver.find_element_by_css_selector("span.spanProdTitle > a").get_attribute("href")
 	#print page_sku_href

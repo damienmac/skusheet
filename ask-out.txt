@@ -1,0 +1,455 @@
+STARTED AT: 2013-05-22 06:48:28.392000
+
+_PCCU_ASK 21276154 N360_2013_12MO_PC FR fr EUR 39.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=FR&lang=FR&selSKU=21276154&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "France"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276154-fr-FR-39.99.png
+PASS: COUNTRY: FR, France
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276154
+PASS: PRICE: 39.99, 39,99 €
+
+_PCCU_ASK 21276154 N360_2013_12MO_PC LU fr EUR 39.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=LU&lang=FR&selSKU=21276154&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Sélectionnez un pays"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276154-fr-LU-39.99.png
+FAIL: COUNTRY: LU, Sélectionnez un pays
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276154
+PASS: PRICE: 39.99, 39,99 €
+
+_PCCU_ASK 21276127 NIS_2013_12MO_PC FR fr EUR 37.99 A08E7460-D6FA-E082-8E91-36882647EB0A
+PASS: URL: http://buy.norton.com/partneroffer?ctry=FR&lang=FR&selSKU=21276127&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart
+Page Country: "France"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276127-fr-FR-37.99.png
+PASS: COUNTRY: FR, France
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276127
+PASS: PRICE: 37.99, 37,99 €
+
+_PCCU_ASK 21276127 NIS_2013_12MO_PC LU fr EUR 37.99 A08E7460-D6FA-E082-8E91-36882647EB0A
+PASS: URL: http://buy.norton.com/partneroffer?ctry=LU&lang=FR&selSKU=21276127&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart
+Page Country: "Sélectionnez un pays"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276127-fr-LU-37.99.png
+FAIL: COUNTRY: LU, Sélectionnez un pays
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276127
+PASS: PRICE: 37.99, 37,99 €
+
+_PCCU_ASK 21276036 NAV_2013_12MO_PC FR fr EUR 34.99 92368756-E4AE-07D7-0F46-4D6DD2BFA54C
+PASS: URL: http://buy.norton.com/partneroffer?ctry=FR&lang=FR&selSKU=21276036&tppc=92368756-E4AE-07D7-0F46-4D6DD2BFA54C&ptype=cart
+Page Country: "France"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276036-fr-FR-34.99.png
+PASS: COUNTRY: FR, France
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276036
+PASS: PRICE: 34.99, 34,99 €
+
+_PCCU_ASK 21276036 NAV_2013_12MO_PC LU fr EUR 34.99 92368756-E4AE-07D7-0F46-4D6DD2BFA54C
+PASS: URL: http://buy.norton.com/partneroffer?ctry=LU&lang=FR&selSKU=21276036&tppc=92368756-E4AE-07D7-0F46-4D6DD2BFA54C&ptype=cart
+Page Country: "Sélectionnez un pays"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276036-fr-LU-34.99.png
+FAIL: COUNTRY: LU, Sélectionnez un pays
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276036
+PASS: PRICE: 34.99, 34,99 €
+
+_PCCU_ASK 21276152 N360_2013_12MO_PC IT it EUR 39.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IT&lang=IT&selSKU=21276152&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Italia"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276152-it-IT-39.99.png
+PASS: COUNTRY: IT, Italia
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276152
+PASS: PRICE: 39.99, € 39,99
+
+_PCCU_ASK 21276107 NIS_2013_12MO_PC IT it EUR 37.99 A08E7460-D6FA-E082-8E91-36882647EB0A
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IT&lang=IT&selSKU=21276107&tppc=A08E7460-D6FA-E082-8E91-36882647EB0A&ptype=cart
+Page Country: "Italia"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276107-it-IT-37.99.png
+PASS: COUNTRY: IT, Italia
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276107
+PASS: PRICE: 37.99, € 37,99
+
+_PCCU_ASK 21276033 NAV_2013_12MO_PC IT it EUR 34.99 92368756-E4AE-07D7-0F46-4D6DD2BFA54C
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IT&lang=IT&selSKU=21276033&tppc=92368756-E4AE-07D7-0F46-4D6DD2BFA54C&ptype=cart
+Page Country: "Italia"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276033-it-IT-34.99.png
+PASS: COUNTRY: IT, Italia
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276033
+PASS: PRICE: 34.99, € 34,99
+
+_PCCU_ASK 21276147 N360_2013_12MO_PC AT de EUR 34.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=21276147&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Österreich"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276147-de-AT-34.99.png
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276147
+PASS: PRICE: 34.99, € 34,99
+
+_PCCU_ASK 21276147 N360_2013_12MO_PC DE de EUR 34.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=21276147&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Deutschland"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276147-de-DE-34.99.png
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276147
+PASS: PRICE: 34.99, 34,99 €
+
+_PCCU_ASK 21276104 NIS_2013_12MO_PC AT de EUR 31.99 49BE0F57-DF68-98F1-26E2-4AF9A8DC9302
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=21276104&tppc=49BE0F57-DF68-98F1-26E2-4AF9A8DC9302&ptype=cart
+Page Country: "Österreich"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276104-de-AT-31.99.png
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276104
+PASS: PRICE: 31.99, € 31,99
+
+_PCCU_ASK 21276104 NIS_2013_12MO_PC DE de EUR 31.99 49BE0F57-DF68-98F1-26E2-4AF9A8DC9302
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=21276104&tppc=49BE0F57-DF68-98F1-26E2-4AF9A8DC9302&ptype=cart
+Page Country: "Deutschland"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276104-de-DE-31.99.png
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276104
+PASS: PRICE: 31.99, 31,99 €
+
+_PCCU_ASK 21276034 NAV_2013_12MO_PC AT de EUR 29.99 A10161AE-8A7A-5D84-BA32-CD15716AE16E
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=21276034&tppc=A10161AE-8A7A-5D84-BA32-CD15716AE16E&ptype=cart
+Page Country: "Österreich"
+Page Product: "Norton™ AntiVirus"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276034-de-AT-29.99.png
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton™ AntiVirus
+PASS: SKU: 21276034
+PASS: PRICE: 29.99, € 29,99
+
+_PCCU_ASK 21276034 NAV_2013_12MO_PC DE de EUR 29.99 A10161AE-8A7A-5D84-BA32-CD15716AE16E
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=21276034&tppc=A10161AE-8A7A-5D84-BA32-CD15716AE16E&ptype=cart
+Page Country: "Deutschland"
+Page Product: "Norton™ AntiVirus"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276034-de-DE-29.99.png
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton™ AntiVirus
+PASS: SKU: 21276034
+PASS: PRICE: 29.99, 29,99 €
+
+_PCCU_ASK 21276155 N360_2013_12MO_PC ES es EUR 44.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=ES&lang=ES&selSKU=21276155&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "España"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276155-es-ES-44.99.png
+PASS: COUNTRY: ES, España
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276155
+PASS: PRICE: 44.99, 44,99 €
+
+_PCCU_ASK 21276128 NIS_2013_12MO_PC ES es EUR 41.99 B7D37237-45A3-0AB2-EF02-F87ACFBB2435
+PASS: URL: http://buy.norton.com/partneroffer?ctry=ES&lang=ES&selSKU=21276128&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart
+Page Country: "España"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276128-es-ES-41.99.png
+PASS: COUNTRY: ES, España
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276128
+PASS: PRICE: 41.99, 41,99 €
+
+_PCCU_ASK 21276018 NAV_2013_12MO_PC ES es EUR 39.99 0EECDDE1-300E-1BEE-F0E6-C731F257DB35
+PASS: URL: http://buy.norton.com/partneroffer?ctry=ES&lang=ES&selSKU=21276018&tppc=0EECDDE1-300E-1BEE-F0E6-C731F257DB35&ptype=cart
+Page Country: "España"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276018-es-ES-39.99.png
+PASS: COUNTRY: ES, España
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276018
+PASS: PRICE: 39.99, 39,99 €
+
+_PCCU_ASK 21276145 N360_2013_12MO_PC BE nl EUR 39.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=21276145&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "België"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276145-nl-BE-39.99.png
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276145
+PASS: PRICE: 39.99, 39,99 €
+
+_PCCU_ASK 21276145 N360_2013_12MO_PC NL nl EUR 39.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NL&lang=NL&selSKU=21276145&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Nederland"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276145-nl-NL-39.99.png
+PASS: COUNTRY: NL, Nederland
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276145
+PASS: PRICE: 39.99, € 39,99
+
+_PCCU_ASK 21276114 NIS_2013_12MO_PC BE nl EUR 37.99 2EAD23B9-042E-CA69-6C7B-8CBE241F521B
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=21276114&tppc=2EAD23B9-042E-CA69-6C7B-8CBE241F521B&ptype=cart
+Page Country: "België"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276114-nl-BE-37.99.png
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276114
+PASS: PRICE: 37.99, 37,99 €
+
+_PCCU_ASK 21276114 NIS_2013_12MO_PC NL nl EUR 37.99 2EAD23B9-042E-CA69-6C7B-8CBE241F521B
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NL&lang=NL&selSKU=21276114&tppc=2EAD23B9-042E-CA69-6C7B-8CBE241F521B&ptype=cart
+Page Country: "Nederland"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276114-nl-NL-37.99.png
+PASS: COUNTRY: NL, Nederland
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276114
+PASS: PRICE: 37.99, € 37,99
+
+_PCCU_ASK 21276026 NAV_2013_12MO_PC BE nl EUR 34.99 2F7D2969-0655-C8F5-089C-E01AEAF903A8
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=21276026&tppc=2F7D2969-0655-C8F5-089C-E01AEAF903A8&ptype=cart
+Page Country: "België"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276026-nl-BE-34.99.png
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276026
+PASS: PRICE: 34.99, 34,99 €
+
+_PCCU_ASK 21276026 NAV_2013_12MO_PC NL nl EUR 34.99 2F7D2969-0655-C8F5-089C-E01AEAF903A8
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NL&lang=NL&selSKU=21276026&tppc=2F7D2969-0655-C8F5-089C-E01AEAF903A8&ptype=cart
+Page Country: "Nederland"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276026-nl-NL-34.99.png
+PASS: COUNTRY: NL, Nederland
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276026
+PASS: PRICE: 34.99, € 34,99
+
+_PCCU_ASK 21276143 N360_2013_12MO_PC BR pt BRL 84 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BR&lang=PT&selSKU=21276143&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Brasil"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276143-pt-BR-84.png
+PASS: COUNTRY: BR, Brasil
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276143
+PASS: PRICE: 84, R$ 84,00
+
+_PCCU_ASK 21276132 NIS_2013_12MO_PC BR pt BRL 74 A10161AE-8A7A-5D84-BA32-CD15716AE16E
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BR&lang=PT&selSKU=21276132&tppc=A10161AE-8A7A-5D84-BA32-CD15716AE16E&ptype=cart
+Page Country: "Brasil"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276132-pt-BR-74.png
+PASS: COUNTRY: BR, Brasil
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276132
+PASS: PRICE: 74, R$ 74,00
+
+_PCCU_ASK 21276022 NAV_2013_12MO_PC BR pt BRL 64 DA0AC5CC-0DCA-FE63-0FE1-51286C452D04
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BR&lang=PT&selSKU=21276022&tppc=DA0AC5CC-0DCA-FE63-0FE1-51286C452D04&ptype=cart
+Page Country: "Brasil"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276022-pt-BR-64.png
+PASS: COUNTRY: BR, Brasil
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276022
+PASS: PRICE: 64, R$ 64,00
+
+_PCCU_ASK 21276146 N360_2013_12MO_PC US en USD 44.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=US&lang=EN&selSKU=21276146&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "United States"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276146-en-US-44.99.png
+PASS: COUNTRY: US, United States
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276146
+PASS: PRICE: 44.99, $ 44.99
+
+_PCCU_ASK 21276123 NIS_2013_12MO_PC US en USD 41.99 B7D37237-45A3-0AB2-EF02-F87ACFBB2435
+PASS: URL: http://buy.norton.com/partneroffer?ctry=US&lang=EN&selSKU=21276123&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart
+Page Country: "United States"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276123-en-US-41.99.png
+PASS: COUNTRY: US, United States
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276123
+PASS: PRICE: 41.99, $ 41.99
+
+_PCCU_ASK 21276031 NAV_2013_12MO_PC US en USD 39.99 D55BA507-1874-2230-AA46-E5AE7F3683B9
+PASS: URL: http://buy.norton.com/partneroffer?ctry=US&lang=EN&selSKU=21276031&tppc=D55BA507-1874-2230-AA46-E5AE7F3683B9&ptype=cart
+Page Country: "United States"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276031-en-US-39.99.png
+PASS: COUNTRY: US, United States
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276031
+PASS: PRICE: 39.99, $ 39.99
+
+_PCCU_ASK 21276146 N360_2013_12MO_PC CA en CAD 44.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=21276146&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Canada"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276146-en-CA-44.99.png
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276146
+PASS: PRICE: 44.99, $ 44.99
+
+_PCCU_ASK 21276123 NIS_2013_12MO_PC CA en CAD 41.99 B7D37237-45A3-0AB2-EF02-F87ACFBB2435
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=21276123&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart
+Page Country: "Canada"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276123-en-CA-41.99.png
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276123
+PASS: PRICE: 41.99, $ 41.99
+
+_PCCU_ASK 21276031 NAV_2013_12MO_PC CA en CAD 39.99 D55BA507-1874-2230-AA46-E5AE7F3683B9
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=21276031&tppc=D55BA507-1874-2230-AA46-E5AE7F3683B9&ptype=cart
+Page Country: "Canada"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276031-en-CA-39.99.png
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276031
+PASS: PRICE: 39.99, $ 39.99
+
+_PCCU_ASK 21276149 N360_2013_12MO_PC GB en GBP 29.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=GB&lang=EN&selSKU=21276149&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "United Kingdom"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276149-en-GB-29.99.png
+PASS: COUNTRY: GB, United Kingdom
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276149
+PASS: PRICE: 29.99, £ 29.99
+
+_PCCU_ASK 21276109 NIS_2013_12MO_PC GB en GBP 27.99 16EE1066-0F9C-09DC-E1E0-F80B807BA824
+PASS: URL: http://buy.norton.com/partneroffer?ctry=GB&lang=EN&selSKU=21276109&tppc=16EE1066-0F9C-09DC-E1E0-F80B807BA824&ptype=cart
+Page Country: "United Kingdom"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276109-en-GB-27.99.png
+PASS: COUNTRY: GB, United Kingdom
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276109
+PASS: PRICE: 27.99, £ 27.99
+
+_PCCU_ASK 21276045 NAV_2013_12MO_PC GB en GBP 24.99 6C7B52C9-42B2-CB6B-B0B6-ED3A0787DF78
+PASS: URL: http://buy.norton.com/partneroffer?ctry=GB&lang=EN&selSKU=21276045&tppc=6C7B52C9-42B2-CB6B-B0B6-ED3A0787DF78&ptype=cart
+Page Country: "United Kingdom"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276045-en-GB-24.99.png
+PASS: COUNTRY: GB, United Kingdom
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276045
+PASS: PRICE: 24.99, £ 24.99
+
+_PCCU_ASK 21276158 N360_2013_12MO_PC AU en AUD 64.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=21276158&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Australia"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276158-en-AU-64.99.png
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276158
+PASS: PRICE: 64.99, $ 64.99
+
+_PCCU_ASK 21276129 NIS_2013_12MO_PC AU en AUD 61.99 6C7B52C9-42B2-CB6B-B0B6-ED3A0787DF78
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=21276129&tppc=6C7B52C9-42B2-CB6B-B0B6-ED3A0787DF78&ptype=cart
+Page Country: "Australia"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276129-en-AU-61.99.png
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276129
+PASS: PRICE: 61.99, $ 61.99
+
+_PCCU_ASK 21276021 NAV_2013_12MO_PC AU en AUD 59.99 2CEBCA86-1C27-46A2-2295-DA7F5ED757EF
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=21276021&tppc=2CEBCA86-1C27-46A2-2295-DA7F5ED757EF&ptype=cart
+Page Country: "Australia"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276021-en-AU-59.99.png
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276021
+PASS: PRICE: 59.99, $ 59.99
+
+_PCCU_ASK 21276158 N360_2013_12MO_PC NZ en NZD 64.99 050E51C6-B0EE-E247-D098-CA0918E11692
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NZ&lang=EN&selSKU=21276158&tppc=050E51C6-B0EE-E247-D098-CA0918E11692&ptype=cart
+Page Country: "New Zealand"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276158-en-NZ-64.99.png
+PASS: COUNTRY: NZ, New Zealand
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276158
+PASS: PRICE: 64.99, $ 64.99
+
+_PCCU_ASK 21276129 NIS_2013_12MO_PC NZ en NZD 61.99 53E8170E-AB54-6CA1-5976-33B3D8567F5A
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NZ&lang=EN&selSKU=21276129&tppc=53E8170E-AB54-6CA1-5976-33B3D8567F5A&ptype=cart
+Page Country: "New Zealand"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276129-en-NZ-61.99.png
+PASS: COUNTRY: NZ, New Zealand
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276129
+PASS: PRICE: 61.99, $ 61.99
+
+_PCCU_ASK 21276021 NAV_2013_12MO_PC NZ en NZD 59.99 9a05e4dc0aaef88c2f06c918aada99d9
+PASS: URL: http://buy.norton.com/partneroffer?ctry=NZ&lang=EN&selSKU=21276021&tppc=9a05e4dc0aaef88c2f06c918aada99d9&ptype=cart
+Page Country: "New Zealand"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276021-en-NZ-59.99.png
+PASS: COUNTRY: NZ, New Zealand
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276021
+PASS: PRICE: 59.99, $ 59.99
+
+_PCCU_ASK 21276149 N360_2013_12MO_PC IE en EUR 44.99 6E4B2B64-D72B-31F7-B75C-8D4591DD2B25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IE&lang=EN&selSKU=21276149&tppc=6E4B2B64-D72B-31F7-B75C-8D4591DD2B25&ptype=cart
+Page Country: "Ireland"
+Page Product: "Norton 360™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276149-en-IE-44.99.png
+PASS: COUNTRY: IE, Ireland
+PASS: PRODUCT: N360_2013_12MO_PC, Norton 360™
+PASS: SKU: 21276149
+PASS: PRICE: 44.99, € 44.99
+
+_PCCU_ASK 21276109 NIS_2013_12MO_PC IE en EUR 41.99 B7D37237-45A3-0AB2-EF02-F87ACFBB2435
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IE&lang=EN&selSKU=21276109&tppc=B7D37237-45A3-0AB2-EF02-F87ACFBB2435&ptype=cart
+Page Country: "Ireland"
+Page Product: "Norton™ Internet Security"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276109-en-IE-41.99.png
+PASS: COUNTRY: IE, Ireland
+PASS: PRODUCT: NIS_2013_12MO_PC, Norton™ Internet Security
+PASS: SKU: 21276109
+PASS: PRICE: 41.99, € 41.99
+
+_PCCU_ASK 21276045 NAV_2013_12MO_PC IE en EUR 39.99 0EECDDE1-300E-1BEE-F0E6-C731F257DB35
+PASS: URL: http://buy.norton.com/partneroffer?ctry=IE&lang=EN&selSKU=21276045&tppc=0EECDDE1-300E-1BEE-F0E6-C731F257DB35&ptype=cart
+Page Country: "Ireland"
+Page Product: "Norton AntiVirus™"
+Saving screenshot to  C:\Users\damien_macielinski\My Documents\GitHub\skusheet\_PCCU_ASK-21276045-en-IE-39.99.png
+PASS: COUNTRY: IE, Ireland
+PASS: PRODUCT: NAV_2013_12MO_PC, Norton AntiVirus™
+PASS: SKU: 21276045
+PASS: PRICE: 39.99, € 39.99
+
+processed 45 records (222 tests passed; 3 tests failed)
+ENDED AT: 2013-05-22 06:53:51.645000
+DURATION: 0:05:23.253000

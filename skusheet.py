@@ -17,6 +17,7 @@ from selenium import webdriver
 from datetime import datetime
 import csv
 import os
+import re
 
 def get_csv_reader(file_name='sample.csv'):
 	csvfile = open(file_name, 'rb')
@@ -180,6 +181,42 @@ def validate_price(price, page_price, country):
 	comma_price = price.replace('.', ',')
 	return price in page_price or comma_price in page_price
 
+page_currency_mapping = {
+	'$'    : 'ARS', # Argentina Peso
+	'$'    : 'AUD', # Australia Dollar
+	'R$'   : 'BRL', # Brazil Real
+	'$'    : 'CAD', # Canadian Dollars
+	'SFr.' : 'CHF', # Switzerland Franc
+	'Ch$ ' : 'CLP', # Chile Peso
+	'$'    : 'COP', # Columbian Peso
+	'kr'   : 'DKK', # Denmark Krone
+	'€'    : 'EUR', # Euros
+	'£'    : 'GBP', # United Kingdom Pound
+	'$'    : 'MXN', # Mexico Peso
+	'kr'   : 'NOK', # Norway Krone
+	'$'    : 'NZD', # New Zealand Dollar
+	'zł'   : 'PLN', # Poland Zloty (at the END like "116,99 zł")
+	'руб.' : 'RUB', # Russia Ruble (no commas, and at end, with period! like "1 881 руб.")
+	'kr'   : 'SEK', # Sweden Krona
+	'$'    : 'SGD', # Singapore Dollar
+	'TL'   : 'TRY', # Turkey Lira (at end like "79,99 TL") 
+	'$'    : 'USD', # US Dollars
+	'R'    : 'ZAR', # South Africa Rand (R 191.99)
+}
+
+def validate_currency(currency, page_price):
+	# find the currency symbol. Note: sometimes it is on the end and other times at the front (grrr!)
+	# try stripping out whitespace, commas, periods, numbers - and see what's left
+	page_currency = re.sub(r'[\s\d\,\.]+', '', page_price)
+	#print '### after strip found "%s"' % page_currency
+	try:
+		if currency == page_currency_mapping[page_currency]:
+			return True
+	except KeyError:
+		return False
+	return False
+
+
 def do_work(row, passed, failed):
 
 	###
@@ -283,6 +320,13 @@ def do_work(row, passed, failed):
 	else:
 		failed += 1
 		print "FAIL: PRICE: %s, %s" % (price, page_price)
+
+	if validate_currency(currency, page_price):
+		passed += 1
+		print "PASS: CURRENCY: %s, %s" % (currency, page_price)
+	else:
+		failed += 1
+		print "FAIL: CURRENCY: %s, %s" % (currency, page_price)
 
 	return passed,failed
 

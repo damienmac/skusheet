@@ -5,7 +5,8 @@
 ##
 #filename = 'mindspark.csv'
 #filename = 'pcd.csv'
-filename = 'ask.csv'
+# filename = 'ask.csv'
+filename = 'all.csv'
 
 ### Sample CSV ###
 # Status,Seq,URL,SKU,Product Code,IsBundle,User-pc count,SKU Type,Page to Land,Site Code,Site Language,Sku Language,Country Code,Language Code,Currency Code,Price,,,org,Channel,Promotion (Flex),Segment,Keyword Category,Email Program,Affiliate Sub Channel,Period (Time),Is Upgrade,PL Code,tppc,Batch Name,sku lang priority,Valid From,Valid To,Phased Out,Source,Vendor
@@ -14,6 +15,7 @@ filename = 'ask.csv'
 ###
 
 from selenium import webdriver
+from selenium.common import exceptions
 from datetime import datetime
 import csv
 import os
@@ -66,7 +68,7 @@ country_mapping = {
 	'AU' : u'Australia',
 	'BE' : u'België', # Belgium
 	'CA' : u'Canada',
-	'CH' : u'Suisse', # Switzerland
+	'CH' : u'Schweiz', # Switzerland also 'Schweiz'? or Suisse''
 	'CL' : u'Chile',
 	'CO' : u'Colombia',
 	'DE' : u'Deutschland', # Germany
@@ -126,7 +128,12 @@ csv_product_mapping = {
 }
 
 page_product_mapping = {
+	'Expert Installation'         : 'Expert Install',
 	'Instalação especializada'    : 'Expert Install', # Portuguese
+	'PC-Installationshilfe'       : 'Expert Install', # Austrian, and others
+	'Installatie door experts'    : 'Expert Install', # Belgian
+	'Service Installation'        : 'Expert Install', # Switzerland and others?
+
 	'Norton 360™'                 : 'N360',
 	'Norton AntiVirus™'           : 'NAV', # nice inconsistency!
 	'Norton™ AntiVirus'           : 'NAV', # nice! inconsistency
@@ -135,7 +142,9 @@ page_product_mapping = {
 	'Norton™ Online Backup 25GB'    : 'NOBU', # nice inconsistency!
 	'Norton™ Online Backup 25 GB'   : 'NOBU', # nice inconsistency !
 	'Norton™ Online Backup (25 GB)' : 'NOBU', # nice inconsistency (!)
-	'Norton™ Online Backup 25 Go'   : 'NOBU', # French? Bug?
+	'Norton™ Online Backup 25 Go'   : 'NOBU', # French
+	'Norton™ Online Backup 25 Gt'   : 'NOBU', # Finland
+	'Norton™ Online Backup 25 ГБ'   : 'NOBU', # Russia
 
 	''                    : 'Norton Utilities', # all these pages are broken?
 
@@ -181,27 +190,27 @@ def validate_price(price, page_price, country):
 	comma_price = price.replace('.', ',')
 	return price in page_price or comma_price in page_price
 
-page_currency_mapping = {
-	'$'    : 'ARS', # Argentina Peso
-	'$'    : 'AUD', # Australia Dollar
-	'R$'   : 'BRL', # Brazil Real
-	'$'    : 'CAD', # Canadian Dollars
-	'SFr.' : 'CHF', # Switzerland Franc
-	'Ch$ ' : 'CLP', # Chile Peso
-	'$'    : 'COP', # Columbian Peso
-	'kr'   : 'DKK', # Denmark Krone
-	'€'    : 'EUR', # Euros
-	'£'    : 'GBP', # United Kingdom Pound
-	'$'    : 'MXN', # Mexico Peso
-	'kr'   : 'NOK', # Norway Krone
-	'$'    : 'NZD', # New Zealand Dollar
-	'zł'   : 'PLN', # Poland Zloty (at the END like "116,99 zł")
-	'руб.' : 'RUB', # Russia Ruble (no commas, and at end, with period! like "1 881 руб.")
-	'kr'   : 'SEK', # Sweden Krona
-	'$'    : 'SGD', # Singapore Dollar
-	'TL'   : 'TRY', # Turkey Lira (at end like "79,99 TL") 
-	'$'    : 'USD', # US Dollars
-	'R'    : 'ZAR', # South Africa Rand (R 191.99)
+currency_mapping = {
+	'ARS'	: '$'    , # Argentina Peso
+	'AUD'	: '$'    , # Australia Dollar
+	'BRL'	: 'R$'   , # Brazil Real
+	'CAD'	: '$'    , # Canadian Dollars
+	'CHF'	: 'SFr'  , # "SFr." Switzerland Franc
+	'CLP'	: 'Ch$ ' , # Chile Peso
+	'COP'	: '$'    , # Columbian Peso
+	'DKK'	: 'kr'   , # Denmark Krone
+	'EUR'	: '€'    , # Euros
+	'GBP'	: '£'    , # United Kingdom Pound
+	'MXN'	: '$'    , # Mexico Peso
+	'NOK'	: 'kr'   , # Norway Krone
+	'NZD'	: '$'    , # New Zealand Dollar
+	'PLN'	: 'zł'   , # Poland Zloty (at the END like "116,99 zl")
+	'RUB'	: 'руб'  , # "руб." Russia Ruble (no commas, and at end, with period! like "1 881 ???.")
+	'SEK'	: 'kr'   , # Sweden Krona
+	'SGD'	: '$'    , # Singapore Dollar
+	'TRY'	: 'TL'   , # Turkey Lira (at end like "79,99 TL") 
+	'USD'	: '$'    , # US Dollars
+	'ZAR'	: 'R'    , # South Africa Rand (R 191.99)
 }
 
 def validate_currency(currency, page_price):
@@ -210,20 +219,20 @@ def validate_currency(currency, page_price):
 	page_currency = re.sub(r'[\s\d\,\.]+', '', page_price)
 	#print '### after strip found "%s"' % page_currency
 	try:
-		if currency == page_currency_mapping[page_currency]:
+		if currency_mapping[currency] == page_currency:
 			return True
 	except KeyError:
 		return False
 	return False
 
 
-def do_work(row, passed, failed):
+def process_row(row, passed, failed):
 
 	###
 	### early exit?
 	###
 	if not row[0] == 'Live':
-		return
+		return passed,failed
 
 	###
 	### scrape the csv row
@@ -267,20 +276,30 @@ def do_work(row, passed, failed):
 	page_url = driver.current_url
 	#print page_url
 
-	page_country = driver.find_element_by_class_name('localizationCtryWithOutImage').text
-	page_country = page_country.encode('utf-8')
-	#print 'Page Country: "%s"' % page_country
+	page_country  = 'NOT FOUND'
+	page_product  = 'NOT FOUND'
+	page_sku_href = 'NOT FOUND'
+	page_price    = 'NOT FOUND'
 
-	page_product = driver.find_element_by_css_selector("span.spanProdTitle > a > span").text
-	page_product = page_product.encode('utf-8')
-	#print 'Page Product: "%s"' % page_product
+	try:
+		page_country = driver.find_element_by_class_name('localizationCtryWithOutImage').text
+		page_country = page_country.encode('utf-8')
+		#print 'Page Country: "%s"' % page_country
 
-	page_sku_href = driver.find_element_by_css_selector("span.spanProdTitle > a").get_attribute("href")
-	#print page_sku_href
+		page_product = driver.find_element_by_css_selector("span.spanProdTitle > a > span").text
+		page_product = page_product.encode('utf-8')
+		#print 'Page Product: "%s"' % page_product
 
-	page_price = driver.find_element_by_class_name('price').text
-	page_price = page_price.encode('utf-8')
-	#print page_price
+		page_sku_href = driver.find_element_by_css_selector("span.spanProdTitle > a").get_attribute("href")
+		#print page_sku_href
+
+		page_price = driver.find_element_by_class_name('price').text
+		page_price = page_price.encode('utf-8')
+		#print page_price
+	except exceptions.NoSuchElementException:
+		# let the validation code fail on default empty strings that might still exist
+		print "ERROR: finding an element on this page did not work!"
+		pass
 
 	# TODO: DM: take a screenshot
 	image_filename = os.getcwd() + "\\" + partner + '-' + sku + '-' + language + '-' + country + '-' + price + '.png'
@@ -343,8 +362,7 @@ def validate_skus():
 	for row in csvreader:
 		if not row: break
 		count += 1
-		#print row
-		passed,failed = do_work(row, passed, failed)
+		passed,failed = process_row(row, passed, failed)
 	close_csv_reader(csvfile)
 
 	print '\nprocessed %d records (%d tests passed; %d tests failed)' % (count, passed, failed)

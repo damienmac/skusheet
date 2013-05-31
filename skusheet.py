@@ -81,9 +81,9 @@ country_mapping = {
 	'AE' : u'', # u'Select Country', # this is broken, should be Arab Emirates
 	'AT' : u'Österreich', # Austria
 	'AU' : u'Australia',
-	'BE' : u'België', # Belgium
-	'CA' : u'Canada',
-	'CH' : u'Schweiz', # Switzerland also 'Schweiz'? or Suisse''
+	'BE' : { 'NL': u'België', 'FR': u'Belgique', }, # Belgium
+	'CA' : { 'EN': u'Canada', 'FR': u'Canada Français', },
+	'CH' : { 'DE': u'Schweiz', 'FR': u'Suisse', }, # Switzerland
 	'CL' : u'Chile',
 	'CO' : u'Colombia',
 	'DE' : u'Deutschland', # Germany
@@ -120,9 +120,14 @@ country_mapping = {
 	'PH' : u'Philippines',
 }
 
-def validate_country(csv_country, page_country):
+def validate_country(csv_country, csv_language, page_country):
 	try:
-		if page_country == country_mapping[csv_country.upper()].encode('utf-8'):
+		country_map = country_mapping[csv_country.upper()]
+		if type(country_map) is dict:
+			country_test = country_map[csv_language.upper()].encode('utf-8')
+		else:
+			country_test = country_map.encode('utf-8')
+		if page_country == country_test:
 			return True
 	except KeyError:
 		return False # something not in our table, FAIL instead of crashing and examine it later
@@ -317,10 +322,10 @@ def process_row(row, passed, failed):
 		print "ERROR: finding an element on this page did not work!"
 		pass
 
-	# TODO: DM: take a screenshot
-	image_filename = os.getcwd() + "\\" + partner + '-' + sku + '-' + language + '-' + country + '-' + price + '.png'
-	print "Saving screenshot to ", image_filename
-	driver.get_screenshot_as_file(image_filename)
+	if (False):
+		image_filename = os.getcwd() + "\\" + partner + '-' + sku + '-' + language + '-' + country + '-' + price + '.png'
+		#print "Saving screenshot to ", image_filename
+		driver.get_screenshot_as_file(image_filename)
 
 
 	driver.close()
@@ -328,7 +333,7 @@ def process_row(row, passed, failed):
 	###
 	### compare everything for validity, massaging as necessary
 	###
-	if validate_country(country, page_country):
+	if validate_country(country, language, page_country):
 		passed += 1
 		print "PASS: COUNTRY: %s, %s" % (country, page_country)
 	else:

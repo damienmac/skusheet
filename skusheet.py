@@ -3,6 +3,21 @@
 ##
 ##
 ##
+
+# KNOWN ISSUES:
+# (1) Some countries use more than one language and have separate links/pages
+# for those languages. My mapping does not take thi sinto account yet.
+# For example:
+# COUNTRY: CA, Canada Français
+# COUNTRY: BE, Belgique
+# COUNTRY: CH, Suisse
+#
+# (2) some prices listed in csv without trailing ".00", but page has it, for example:
+# PRICE: 1300, $ 1,300.00
+#
+# (3) Rubles use spaces? I don't handle that right yet.
+# PRICE: 1192.5, 1 192,5 руб.
+
 #filename = 'mindspark.csv'
 #filename = 'pcd.csv'
 # filename = 'ask.csv'
@@ -156,13 +171,14 @@ page_product_mapping = {
 	'PC Power Boost'      : 'PC Powerboost',
 
 	'PC Tune-Up'          : 'PC Tune-Up',
+	'PC TuneUp'           : 'PC Tune-Up',
 	'Pc-afstelling'       : 'PC Tune-Up', # Dutch
 	'PC-Optimierung'      : 'PC Tune-Up', # German
 	'Optimisation du PC'  : 'PC Tune-Up', # French
 	'Datoroptimering'     : 'PC Tune-Up', # Swedish
 	'Optimização do PC'   : 'PC Tune-Up', # Portuguese
 
-	'NortonLive™ Spyware and Virus Removal '                  : 'Spyware and Virus Removal',
+	'NortonLive™ Spyware and Virus Removal'                   : 'Spyware and Virus Removal',
 	'Rimozione di spyware e virus NortonLive™'                : 'Spyware and Virus Removal', # Italian
 	'Eliminación de virus y spyware de NortonLive™'           : 'Spyware and Virus Removal', # Spanish
 	'NortonLive™ Remoção de Vírus e Spyware'                  : 'Spyware and Virus Removal', # Portuguese
@@ -196,7 +212,7 @@ currency_mapping = {
 	'BRL'	: 'R$'   , # Brazil Real
 	'CAD'	: '$'    , # Canadian Dollars
 	'CHF'	: 'SFr'  , # "SFr." Switzerland Franc
-	'CLP'	: 'Ch$ ' , # Chile Peso
+	'CLP'	: 'Ch$'  , # Chile Peso
 	'COP'	: '$'    , # Columbian Peso
 	'DKK'	: 'kr'   , # Denmark Krone
 	'EUR'	: '€'    , # Euros

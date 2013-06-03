@@ -1,22 +1,79 @@
-STARTED AT: 2013-05-31 16:23:24.936000
+STARTED AT: 2013-06-01 00:27:05.424000
 
-Symantec 13561756 PCT_Vx_0MO_PC CH fr CHF 99.9 d91da2b237c2064026df163b499f10c1
-PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561756&tppc=d91da2b237c2064026df163b499f10c1&ptype=cart
-PASS: COUNTRY: CH, Suisse
-PASS: PRODUCT: PCT_Vx_0MO_PC, Optimisation du PC
-PASS: SKU: 13561756
-PASS: PRICE: 99.9, SFr. 99.90
-PASS: CURRENCY: CHF, SFr. 99.90
+Symantec 13561751 EIS_Vx_0MO_PC AE en USD 19.99 1a7d54e6e21b3eec62a9b6a2f2d6eb25
+Row #2
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AE&lang=EN&selSKU=13561751&tppc=1a7d54e6e21b3eec62a9b6a2f2d6eb25&ptype=cart
+FAIL: COUNTRY: AE, Select Country
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 13561751
+PASS: PRICE: 19.99, USD 19.99
+FAIL: CURRENCY: USD, USD 19.99
 
-Symantec 13561753 PCT_Vx_0MO_PC CH de CHF 99.9 d91da2b237c2064026df163b499f10c1
-PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561753&tppc=d91da2b237c2064026df163b499f10c1&ptype=cart
-PASS: COUNTRY: CH, Schweiz
-PASS: PRODUCT: PCT_Vx_0MO_PC, PC-Optimierung
-PASS: SKU: 13561753
-PASS: PRICE: 99.9, SFr. 99.90
-PASS: CURRENCY: CHF, SFr. 99.90
+Symantec 13561751 EIS_Vx_0MO_PC AE en USD 17.99 bd695ba4630f67b79bd7500256d5e6ed
+Row #3
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AE&lang=EN&selSKU=13561751&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+FAIL: COUNTRY: AE, Select Country
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 13561751
+PASS: PRICE: 17.99, USD 17.99
+FAIL: CURRENCY: USD, USD 17.99
+
+Symantec 13561751 EIS_Vx_0MO_PC AE en USD 16.99 9e2209ee4e82c4234f2d25a34b7192c1
+Row #4
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AE&lang=EN&selSKU=13561751&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+FAIL: COUNTRY: AE, Select Country
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 13561751
+PASS: PRICE: 16.99, USD 16.99
+FAIL: CURRENCY: USD, USD 16.99
+
+Symantec 13561751 EIS_Vx_0MO_PC AE en USD 15.99 26d0aa163ad4796e52994946ed48017f
+Row #5
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AE&lang=EN&selSKU=13561751&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+FAIL: COUNTRY: AE, Select Country
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 13561751
+PASS: PRICE: 15.99, USD 15.99
+FAIL: CURRENCY: USD, USD 15.99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 39.99 1a7d54e6e21b3eec62a9b6a2f2d6eb25
+Row #6
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=1a7d54e6e21b3eec62a9b6a2f2d6eb25&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 39.99, € 39,99
+PASS: CURRENCY: EUR, € 39,99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 35.99 bd695ba4630f67b79bd7500256d5e6ed
+Row #7
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 35.99, € 35,99
+PASS: CURRENCY: EUR, € 35,99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 33.99 9e2209ee4e82c4234f2d25a34b7192c1
+Row #8
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 33.99, € 33,99
+PASS: CURRENCY: EUR, € 33,99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 31.99 26d0aa163ad4796e52994946ed48017f
+Row #9
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 31.99, € 31,99
+PASS: CURRENCY: EUR, € 31,99
 
 Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 29.99 7b990de271a6eb548d4e204edffed44c
+Row #10
 PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
 PASS: COUNTRY: AT, Österreich
 PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
@@ -24,6 +81,447 @@ PASS: SKU: 13561754
 PASS: PRICE: 29.99, € 29,99
 PASS: CURRENCY: EUR, € 29,99
 
-processed 3 records (18 tests passed; 0 tests failed)
-ENDED AT: 2013-05-31 16:23:50.354000
-DURATION: 0:00:25.418000
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 27.99 c000d8676bb9755504dc50240d2cbb7c
+Row #11
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+FAIL: PRICE: 27.99, € 39,99
+PASS: CURRENCY: EUR, € 39,99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 23.99 54c25948177af520f6f20be466d44731
+Row #12
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=54c25948177af520f6f20be466d44731&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 23.99, € 23,99
+PASS: CURRENCY: EUR, € 23,99
+
+Symantec 13561754 EIS_Vx_0MO_PC AT de EUR 19.99 1d92fefc16d046ca2a46858fa2e43a26
+Row #13
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AT&lang=DE&selSKU=13561754&tppc=1d92fefc16d046ca2a46858fa2e43a26&ptype=cart
+PASS: COUNTRY: AT, Österreich
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 19.99, € 19,99
+PASS: CURRENCY: EUR, € 19,99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU EN AUD 59.99 7b7c8944b5fdda38d995eeec5ca584e6
+Row #14
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=7b7c8944b5fdda38d995eeec5ca584e6&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 59.99, $ 59.99
+PASS: CURRENCY: AUD, $ 59.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 53.99 bd695ba4630f67b79bd7500256d5e6ed
+Row #15
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 53.99, $ 53.99
+PASS: CURRENCY: AUD, $ 53.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 50.99 9e2209ee4e82c4234f2d25a34b7192c1
+Row #16
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 50.99, $ 50.99
+PASS: CURRENCY: AUD, $ 50.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 47.99 26d0aa163ad4796e52994946ed48017f
+Row #17
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 47.99, $ 47.99
+PASS: CURRENCY: AUD, $ 47.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 44.99 7b990de271a6eb548d4e204edffed44c
+Row #18
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 44.99, $ 44.99
+PASS: CURRENCY: AUD, $ 44.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 41.99 c000d8676bb9755504dc50240d2cbb7c
+Row #19
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+FAIL: PRICE: 41.99, $ 69.99
+PASS: CURRENCY: AUD, $ 69.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 35.99 54c25948177af520f6f20be466d44731
+Row #20
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=54c25948177af520f6f20be466d44731&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 35.99, $ 35.99
+PASS: CURRENCY: AUD, $ 35.99
+
+Symantec 20322046 EIS_Vx_0MO_PC AU en AUD 29.99 1d92fefc16d046ca2a46858fa2e43a26
+Row #21
+PASS: URL: http://buy.norton.com/partneroffer?ctry=AU&lang=EN&selSKU=20322046&tppc=1d92fefc16d046ca2a46858fa2e43a26&ptype=cart
+PASS: COUNTRY: AU, Australia
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322046
+PASS: PRICE: 29.99, $ 29.99
+PASS: CURRENCY: AUD, $ 29.99
+
+Symantec 14459846 EIS_Vx_0MO_PC BE NL EUR 39.99 7b7c8944b5fdda38d995eeec5ca584e6
+Row #22
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=7b7c8944b5fdda38d995eeec5ca584e6&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 39.99, 39,99 €
+PASS: CURRENCY: EUR, 39,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 35.99 bd695ba4630f67b79bd7500256d5e6ed
+Row #23
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 35.99, 35,99 €
+PASS: CURRENCY: EUR, 35,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 33.99 9e2209ee4e82c4234f2d25a34b7192c1
+Row #24
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 33.99, 33,99 €
+PASS: CURRENCY: EUR, 33,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 31.99 26d0aa163ad4796e52994946ed48017f
+Row #25
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 31.99, 31,99 €
+PASS: CURRENCY: EUR, 31,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 29.99 7b990de271a6eb548d4e204edffed44c
+Row #26
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 29.99, 29,99 €
+PASS: CURRENCY: EUR, 29,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 27.99 c000d8676bb9755504dc50240d2cbb7c
+Row #27
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+FAIL: PRICE: 27.99, 39,99 €
+PASS: CURRENCY: EUR, 39,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 23.99 54c25948177af520f6f20be466d44731
+Row #28
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=54c25948177af520f6f20be466d44731&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 23.99, 23,99 €
+PASS: CURRENCY: EUR, 23,99 €
+
+Symantec 14459846 EIS_Vx_0MO_PC BE nl EUR 19.99 1d92fefc16d046ca2a46858fa2e43a26
+Row #29
+PASS: URL: http://buy.norton.com/partneroffer?ctry=BE&lang=NL&selSKU=14459846&tppc=1d92fefc16d046ca2a46858fa2e43a26&ptype=cart
+PASS: COUNTRY: BE, België
+PASS: PRODUCT: EIS_Vx_0MO_PC, Installatie door experts
+PASS: SKU: 14459846
+PASS: PRICE: 19.99, 19,99 €
+PASS: CURRENCY: EUR, 19,99 €
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 44.99 1a7d54e6e21b3eec62a9b6a2f2d6eb25
+Row #30
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=1a7d54e6e21b3eec62a9b6a2f2d6eb25&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 44.99, $ 44.99
+PASS: CURRENCY: CAD, $ 44.99
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 40.49 bd695ba4630f67b79bd7500256d5e6ed
+Row #31
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 40.49, $ 40.49
+PASS: CURRENCY: CAD, $ 40.49
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 38.24 9e2209ee4e82c4234f2d25a34b7192c1
+Row #32
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 38.24, $ 38.24
+PASS: CURRENCY: CAD, $ 38.24
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 35.99 26d0aa163ad4796e52994946ed48017f
+Row #33
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 35.99, $ 35.99
+PASS: CURRENCY: CAD, $ 35.99
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 33.74 7b990de271a6eb548d4e204edffed44c
+Row #34
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 33.74, $ 33.74
+PASS: CURRENCY: CAD, $ 33.74
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 31.49 c000d8676bb9755504dc50240d2cbb7c
+Row #35
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+FAIL: PRICE: 31.49, $ 49.99
+PASS: CURRENCY: CAD, $ 49.99
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 26.99 54c25948177af520f6f20be466d44731
+Row #36
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=54c25948177af520f6f20be466d44731&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 26.99, $ 26.99
+PASS: CURRENCY: CAD, $ 26.99
+
+Symantec 20322088 EIS_Vx_0MO_PC CA en CAD 22.49 7b7c8944b5fdda38d995eeec5ca584e6
+Row #37
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CA&lang=EN&selSKU=20322088&tppc=7b7c8944b5fdda38d995eeec5ca584e6&ptype=cart
+PASS: COUNTRY: CA, Canada
+PASS: PRODUCT: EIS_Vx_0MO_PC, Expert Installation
+PASS: SKU: 20322088
+PASS: PRICE: 22.49, $ 22.49
+PASS: CURRENCY: CAD, $ 22.49
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 59.90 1a7d54e6e21b3eec62a9b6a2f2d6eb25
+Row #38
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=1a7d54e6e21b3eec62a9b6a2f2d6eb25&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 59.90, SFr. 59.90
+PASS: CURRENCY: CHF, SFr. 59.90
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 53.91 bd695ba4630f67b79bd7500256d5e6ed
+Row #39
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 53.91, SFr. 53.91
+PASS: CURRENCY: CHF, SFr. 53.91
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 50.92 9e2209ee4e82c4234f2d25a34b7192c1
+Row #40
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 50.92, SFr. 50.92
+PASS: CURRENCY: CHF, SFr. 50.92
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 47.92 26d0aa163ad4796e52994946ed48017f
+Row #41
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 47.92, SFr. 47.92
+PASS: CURRENCY: CHF, SFr. 47.92
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 44.93 7b990de271a6eb548d4e204edffed44c
+Row #42
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 44.93, SFr. 44.93
+PASS: CURRENCY: CHF, SFr. 44.93
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 41.93 c000d8676bb9755504dc50240d2cbb7c
+Row #43
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+FAIL: PRICE: 41.93, SFr. 59.90
+PASS: CURRENCY: CHF, SFr. 59.90
+
+Symantec 13561754 EIS_Vx_0MO_PC CH de CHF 29.95 1d92fefc16d046ca2a46858fa2e43a26
+Row #44
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=DE&selSKU=13561754&tppc=1d92fefc16d046ca2a46858fa2e43a26&ptype=cart
+PASS: COUNTRY: CH, Schweiz
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 29.95, SFr. 29.95
+PASS: CURRENCY: CHF, SFr. 29.95
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 59.90 1a7d54e6e21b3eec62a9b6a2f2d6eb25
+Row #45
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=1a7d54e6e21b3eec62a9b6a2f2d6eb25&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 59.90, SFr. 59.90
+PASS: CURRENCY: CHF, SFr. 59.90
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 53.91 bd695ba4630f67b79bd7500256d5e6ed
+Row #46
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 53.91, SFr. 53.91
+PASS: CURRENCY: CHF, SFr. 53.91
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 50.92 9e2209ee4e82c4234f2d25a34b7192c1
+Row #47
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 50.92, SFr. 50.92
+PASS: CURRENCY: CHF, SFr. 50.92
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 47.92 26d0aa163ad4796e52994946ed48017f
+Row #48
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 47.92, SFr. 47.92
+PASS: CURRENCY: CHF, SFr. 47.92
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 44.93 7b990de271a6eb548d4e204edffed44c
+Row #49
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 44.93, SFr. 44.93
+PASS: CURRENCY: CHF, SFr. 44.93
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 41.93 c000d8676bb9755504dc50240d2cbb7c
+Row #50
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=c000d8676bb9755504dc50240d2cbb7c&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+FAIL: PRICE: 41.93, SFr. 59.90
+PASS: CURRENCY: CHF, SFr. 59.90
+
+Symantec 13561757 EIS_Vx_0MO_PC CH fr CHF 29.95 1d92fefc16d046ca2a46858fa2e43a26
+Row #51
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CH&lang=FR&selSKU=13561757&tppc=1d92fefc16d046ca2a46858fa2e43a26&ptype=cart
+PASS: COUNTRY: CH, Suisse
+PASS: PRODUCT: EIS_Vx_0MO_PC, Service Installation
+PASS: SKU: 13561757
+PASS: PRICE: 29.95, SFr. 29.95
+PASS: CURRENCY: CHF, SFr. 29.95
+
+Symantec 20322088 EIS_Vx_0MO_PC CL es CLP  404348f1794a73a428efdeaca0360654
+Row #52
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CL&lang=ES&selSKU=20322088&tppc=404348f1794a73a428efdeaca0360654&ptype=cart
+ERROR: finding an element on this page did not work!
+PASS: COUNTRY: CL, Chile
+FAIL: PRODUCT: EIS_Vx_0MO_PC, NOT FOUND
+FAIL: SKU: 20322088 not in NOT FOUND
+PASS: PRICE: , NOT FOUND
+FAIL: CURRENCY: CLP, NOT FOUND
+
+Symantec 20322088 EIS_Vx_0MO_PC CO es COP  404348f1794a73a428efdeaca0360654
+Row #53
+PASS: URL: http://buy.norton.com/partneroffer?ctry=CO&lang=ES&selSKU=20322088&tppc=404348f1794a73a428efdeaca0360654&ptype=cart
+ERROR: finding an element on this page did not work!
+PASS: COUNTRY: CO, Colombia
+FAIL: PRODUCT: EIS_Vx_0MO_PC, NOT FOUND
+FAIL: SKU: 20322088 not in NOT FOUND
+PASS: PRICE: , NOT FOUND
+FAIL: CURRENCY: COP, NOT FOUND
+
+Symantec 13561754 EIS_Vx_0MO_PC DE DE EUR 39.99 7b7c8944b5fdda38d995eeec5ca584e6
+Row #54
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=13561754&tppc=7b7c8944b5fdda38d995eeec5ca584e6&ptype=cart
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 39.99, 39,99 €
+PASS: CURRENCY: EUR, 39,99 €
+
+Symantec 13561754 EIS_Vx_0MO_PC DE de EUR 35.99 bd695ba4630f67b79bd7500256d5e6ed
+Row #55
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=13561754&tppc=bd695ba4630f67b79bd7500256d5e6ed&ptype=cart
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 35.99, 35,99 €
+PASS: CURRENCY: EUR, 35,99 €
+
+Symantec 13561754 EIS_Vx_0MO_PC DE de EUR 33.99 9e2209ee4e82c4234f2d25a34b7192c1
+Row #56
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=13561754&tppc=9e2209ee4e82c4234f2d25a34b7192c1&ptype=cart
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 33.99, 33,99 €
+PASS: CURRENCY: EUR, 33,99 €
+
+Symantec 13561754 EIS_Vx_0MO_PC DE de EUR 31.99 26d0aa163ad4796e52994946ed48017f
+Row #57
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=13561754&tppc=26d0aa163ad4796e52994946ed48017f&ptype=cart
+PASS: COUNTRY: DE, Deutschland
+PASS: PRODUCT: EIS_Vx_0MO_PC, PC-Installationshilfe
+PASS: SKU: 13561754
+PASS: PRICE: 31.99, 31,99 €
+PASS: CURRENCY: EUR, 31,99 €
+
+Symantec 13561754 EIS_Vx_0MO_PC DE de EUR 29.99 7b990de271a6eb548d4e204edffed44c
+Row #58
+PASS: URL: http://buy.norton.com/partneroffer?ctry=DE&lang=DE&selSKU=13561754&tppc=7b990de271a6eb548d4e204edffed44c&ptype=cart
+Traceback (most recent call last):
+  File "skusheet.py", line 392, in <module>
+    validate_skus()
+  File "skusheet.py", line 382, in validate_skus
+    passed,failed = process_row(row, count, passed, failed)
+  File "skusheet.py", line 288, in process_row
+    driver = webdriver.Firefox()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 61, in __init__
+    self.binary, timeout),
+  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\extension_connection.py", line 47, in __init__
+    self.binary.launch_browser(self.profile)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\firefox_binary.py", line 51, in launch_browser
+    self._wait_until_connectable()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\firefox_binary.py", line 95, in _wait_until_connectable
+    self.profile.path, self._get_firefox_output()))
+selenium.common.exceptions.WebDriverException: Message: "Can't load the profile. Profile Dir: c:\\users\\damien~1\\appdata\\local\\temp\\tmpisqwec Firefox output: *** LOG addons.xpi: startup\r\n*** LOG addons.xpi: Skipping unavailable install location app-system-local\r\n*** LOG addons.xpi: Skipping unavailable install location app-system-share\r\n*** LOG addons.xpi: checkForChanges\r\n*** LOG addons.xpi: No changes found\r\n" 

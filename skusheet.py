@@ -5,17 +5,10 @@
 ##
 
 # KNOWN ISSUES:
-# (1) Some countries use more than one language and have separate links/pages
-# for those languages. My mapping does not take thi sinto account yet.
-# For example:
-# COUNTRY: CA, Canada Français
-# COUNTRY: BE, Belgique
-# COUNTRY: CH, Suisse
-#
-# (2) some prices listed in csv without trailing ".00", but page has it, for example:
+# (1) some prices listed in csv without trailing ".00", but page has it, for example:
 # PRICE: 1300, $ 1,300.00
 #
-# (3) Rubles use spaces? I don't handle that right yet.
+# (2) Rubles use spaces? I don't handle that right yet.
 # PRICE: 1192.5, 1 192,5 руб.
 
 #filename = 'mindspark.csv'
@@ -247,7 +240,7 @@ def validate_currency(currency, page_price):
 	return False
 
 
-def process_row(row, passed, failed):
+def process_row(row, count, passed, failed):
 
 	###
 	### early exit?
@@ -268,6 +261,7 @@ def process_row(row, passed, failed):
 	tppc     = row[28]
 	partner  = row[35]
 	print "\n", partner, sku, product, country, language, currency, price, tppc
+	print "Row #%d" % count
 	#print url
 
 	###
@@ -290,7 +284,9 @@ def process_row(row, passed, failed):
 	###
 	### get the page and scrape the data
 	###
+	# driver = webdriver.Chrome()
 	driver = webdriver.Firefox()
+	# driver = webdriver.Ie()
 	driver.get(url)
 	driver.implicitly_wait(7)
 
@@ -372,7 +368,7 @@ def process_row(row, passed, failed):
 
 
 def validate_skus():
-	count = 0
+	count = 1
 	passed = 0
 	failed = 0
 
@@ -383,7 +379,7 @@ def validate_skus():
 	for row in csvreader:
 		if not row: break
 		count += 1
-		passed,failed = process_row(row, passed, failed)
+		passed,failed = process_row(row, count, passed, failed)
 	close_csv_reader(csvfile)
 
 	print '\nprocessed %d records (%d tests passed; %d tests failed)' % (count, passed, failed)
